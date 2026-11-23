@@ -1,0 +1,1 @@
+Simple criptografy module to implement in your Software
