@@ -7,8 +7,8 @@ public = ""
 def validate(key, change):
     global public
     if public == "":
-        #public = change
-        print(public)
+        public = change
+        #print(public)
         return 0
     if public == key:
         public = change
