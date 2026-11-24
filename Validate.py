@@ -3,6 +3,9 @@ from cryptography.hazmat.primitives.asymmetric import padding, rsa
 
 public = ""
 
+def who():
+    global public
+    return public
 
 def validate(key, change):
     global public
