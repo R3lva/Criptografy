@@ -3,4 +3,15 @@ from cryptography.hazmat.primitives.asymmetric import padding, rsa
 
 public = ""
 
-def validate():
+
+def validate(key, change):
+    global public
+    if public == "":
+        #public = change
+        print(public)
+        return 0
+    if public == key:
+        public = change
+        #print(public)
+        return 1
+    return 0
